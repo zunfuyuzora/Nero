@@ -1,0 +1,42 @@
+.product-thumb {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #530174;
+}
+
+.product-image {
+    height:300px;
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 1em;
+}
+
+.product-thumb img,
+.product-image img {
+    height:100%;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+.card{
+    transition: 0.2s ease-in-out;
+    margin: 1em;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.similar {
+    display: -webkit-box;
+    overflow-x: auto;
+}
