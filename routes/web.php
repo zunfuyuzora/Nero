@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('landing');
-});
+})->name('landing');
 
 Auth::routes();
 
@@ -28,7 +28,7 @@ Route::get('/about', function(){
     return view('pages.about');
 })->name('about');
 Route::get('/cart', function(){
-    return view('pages.shop');
+    return view('pages.cart');
 })->name('cart');
 Route::get('/checkout', function(){
     return view('pages.checkout');

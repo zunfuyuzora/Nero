@@ -40,3 +40,81 @@
     display: -webkit-box;
     overflow-x: auto;
 }
+
+#blog-banner {
+    /* background-image: url('../images/blog/business-blog-post.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    position: relative;
+}
+
+#blog-banner > .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#blog-banner > .banner-text {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    left: 0;
+}
+
+#ad-banner {
+    height: 200px;
+    width: auto;
+}
+.thumb-small {
+    width: 100px;
+    height:70px;
+}
+
+.thumb-medium{
+    width: 220px;
+    height: 140px;
+}
+.thumb-medium2 {
+    width: auto;
+    height: 80px;
+    text-align: center;
+}
+.thumb-small img,
+.thumb-medium img {
+    width: 100%;
+    height: auto;
+}
+.thumb-medium2 img {
+    width: auto;
+    height: 100%;
+}
+.thumb-small,
+.thumb-medium,
+.thumb-medium2 {
+    overflow: hidden;
+}
+
+
+.popular-post {
+    height: 70px;
+    overflow: hidden;
+}
+.recent-post .desc {
+    height: 20px;
+    overflow:hidden;
+}
+
+.product {
+    position: relative;
+}
+
+.product .desc {
+    height: 24px;
+}
+
+.delete button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
