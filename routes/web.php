@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
@@ -36,3 +39,10 @@ Route::get('/checkout', function(){
 Route::get('/shop/product', function(){
     return view('pages.product');
 })->name('product');
+
+Route::get('/react/{path?}', function(){
+    return view('app');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
